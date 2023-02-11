@@ -21,7 +21,7 @@ public class LogInHandle {
                 stmt.setInt(1,uId);
                 stmt.setInt(2,pin);
                 ResultSet rs = stmt.executeQuery();
-                while(rs.next()) {
+                if(rs.next()) {
                     int userId = rs.getInt(1);
                     int pass = rs.getInt(2);
                     double balance = rs.getDouble(3);

@@ -5,7 +5,7 @@ import java.sql.*;
 public class ConnectToDB {
     private static Connection makeConnection(String userName,String pass,String url) {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(url,userName,pass);
             if(con.isClosed()) {
                 System.out.println("Database connection is closed");

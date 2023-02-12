@@ -88,6 +88,8 @@ public class ATMInterfaceMain {
                             break;
                         case 6:
                             uhnd.quit();
+                        default:
+                            System.out.println("Invalid Choice!");
                     }
                 
                 }

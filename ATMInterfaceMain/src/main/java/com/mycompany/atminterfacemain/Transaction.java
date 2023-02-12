@@ -38,7 +38,7 @@ public class Transaction {
     public final int from;
     
     public void showTransacrion() {
-        System.out.println("Transaction ID : " + trans_id + "\t" + d + "\t" + mode + "\t" + amount + "\t" + from + "\t" + to );
+        System.out.println("Transaction ID : " + trans_id + "\t" + d + "\t" + mode + "\t" + amount + "\tfrom " + from + "\tto " + to );
     }
     
     

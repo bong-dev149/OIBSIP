@@ -58,7 +58,9 @@ public class User {
     
      public void showTransactions() {
         for(int i=0;i<transactions.size();i++) {
-            this.transactions.get(i).showTransacrion();
+            Transaction t = this.transactions.get(i);
+            if(t.from == this.userID || t.mode.equals("CREDIT"))
+                t.showTransacrion();
         }
     }
 
